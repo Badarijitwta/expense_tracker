@@ -1,0 +1,59 @@
+.wallet-balance-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.expense-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
+.top-content-wrapper>* {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(26, 27, 27, 0.557);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 100%;
+  max-width: 210px;
+  height: 150px;
+}
+
+.top-content-wrapper {
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(1fr 3);
+  /* justify-content: center;
+  align-items: center; */
+  padding: 1rem;
+
+  gap: 1rem;
+  width: 100%;
+  max-width: 210px;
+
+}
+
+.top-content-container {
+  display: flex;
+  background: rgba(46, 43, 43, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(44, 45, 52, 0.752);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(232, 232, 232, 0.576);
+  margin-top: 1rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+}
