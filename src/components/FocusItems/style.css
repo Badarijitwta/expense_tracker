@@ -45,8 +45,10 @@
 
 .top-content-container {
   display: flex;
-  background: rgba(46, 43, 43, 0.3);
-  box-shadow: 0 8px 32px 0 rgba(44, 45, 52, 0.752);
+  background: #626262;
+
+  box-shadow: 0px 4px 4px 0px #00000040;
+
   backdrop-filter: blur(7.5px);
   -webkit-backdrop-filter: blur(7.5px);
   border-radius: 10px;

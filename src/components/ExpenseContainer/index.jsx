@@ -1,4 +1,5 @@
 import "./style.css";
+import { AddExpenseButton } from "../Buttons";
 
 function ExpensesContainer() {
   return (
@@ -6,9 +7,7 @@ function ExpensesContainer() {
       <h4 id="expense-text">
         Expenses: <span>₹100</span>
       </h4>
-      <div className="expense-button">
-        <button> + Add Expense</button>
-      </div>
+      <AddExpenseButton />
     </div>
   );
 }
