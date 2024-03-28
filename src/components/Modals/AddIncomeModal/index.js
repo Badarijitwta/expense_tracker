@@ -29,7 +29,7 @@ function AddIncomeModal({
       overlayClassName="modal-overlay"
     >
       <h3 id="income-modal-header">Add Balance</h3>
-      <div className="input-button-container">
+      <div className="income-wrapper">
         <input
           id="balance-input"
           type="text"

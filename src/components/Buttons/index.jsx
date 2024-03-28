@@ -6,10 +6,10 @@ const AddIncomeButton = ({ onClick }) => {
     </div>
   );
 };
-const AddExpenseButton = () => {
+const AddExpenseButton = ({ onClick }) => {
   return (
     <div className="expense-button">
-      <button> + Add Expense</button>
+      <button onClick={onClick}> + Add Expense</button>
     </div>
   );
 };
