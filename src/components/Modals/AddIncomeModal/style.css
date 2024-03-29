@@ -84,3 +84,22 @@
 /* * {
   border: 2px solid black;
 } */
+
+@media (min-width:500px) {
+  .modal {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .income-wrapper {
+    width: 100%;
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #balance-input {
+    width: 180px;
+  }
+
+}

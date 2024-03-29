@@ -1,6 +1,6 @@
 import "./style.css";
 
-export default function TopExpenses() {
+export default function TopExpenses({ data }) {
   return (
     <div className="top-expenses-container">
       <h3>Top Expenses</h3>

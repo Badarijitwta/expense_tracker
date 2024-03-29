@@ -72,3 +72,18 @@
 /* * {
   border: 2px solid black;
 } */
+
+@media (min-width:400px) {
+  .expense-modal {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .expense-wrapper {
+    display: grid;
+    width: 100%;
+    max-width: 600px;
+    grid-template-columns: 3fr 3fr;
+  }
+}

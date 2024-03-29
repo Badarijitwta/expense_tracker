@@ -13,7 +13,7 @@ const AddExpenseModal = ({ isOpen, closeModal, handleAddExpense }) => {
   const handleSubmit = () => {
     // Check if any field is empty
     if (!title || !price || !category || !date) {
-      enqueueSnackbar('Please fill all fields', { variant: 'error' });
+      enqueueSnackbar('Please fill all fields', { variant: 'warning' });
       return;
     }
 
@@ -30,8 +30,8 @@ const AddExpenseModal = ({ isOpen, closeModal, handleAddExpense }) => {
     }
 
     // Validate category length
-    if (category.length > 12) {
-      enqueueSnackbar('Category should not exceed 12 characters', { variant: 'error' });
+    if (category.length > 20) {
+      enqueueSnackbar('Category should not exceed 20 characters', { variant: 'error' });
       return;
     }
 

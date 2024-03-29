@@ -24,3 +24,7 @@
 .wallet-balance-button {
   margin-top: 0.5rem;
 }
+
+button:hover {
+  cursor: pointer;
+}
