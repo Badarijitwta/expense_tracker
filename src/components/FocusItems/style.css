@@ -59,3 +59,12 @@
   align-items: center;
 
 }
+
+.below-content-container {
+  margin-top: 1rem;
+  border: 2px solid red;
+}
+
+/* .below-content-container>* {
+  border: 2px solid red;
+} */

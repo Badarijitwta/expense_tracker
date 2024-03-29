@@ -1,0 +1,25 @@
+.individual-transaction>li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid black;
+  border-width: 90%;
+  margin: 0.5rem;
+}
+
+#transaction-icon {
+  border: 2px solid black;
+  border-radius: 50%;
+
+}
+
+
+#transaction-td-wrapper {
+  margin-right: auto;
+  padding-left: 0.4rem;
+}
+
+#transaction-pb-wrapper {
+  display: flex;
+  justify-content: space-between;
+}

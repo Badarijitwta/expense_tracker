@@ -7,6 +7,7 @@ function HomePage() {
       <h3 id="page-heading">Expense Tracker</h3>
       <div className="main-content-container">
         <FocusElements />
+        {/* <RecentTransaction /> */}
       </div>
     </div>
   );
