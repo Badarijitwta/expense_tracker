@@ -2,15 +2,18 @@ import "./style.css";
 import { AddExpenseButton } from "../Buttons";
 import { useState } from "react";
 import AddExpenseModal from "../Modals/AddExpenseModal/index";
-
+import { v4 as uuidv4 } from "uuid"
 function ExpensesContainer({
   transactions,
   setTransactions,
   walletBalance,
   setWalletBalance,
 }) {
+  const generateuuid = () => {
+    return uuidv4()
+  }
   const [isExpenseModalOpen, setIsExpenseModalOpen] = useState(false);
-  const [nextId, setNextId] = useState(1);
+  // const [nextId, setNextId] = useState(1);
   const openExpenseModal = () => {
     setIsExpenseModalOpen(true);
   };
@@ -21,13 +24,13 @@ function ExpensesContainer({
   const handleAddExpense = (expense) => {
     openExpenseModal();
     // Create new expense object with an id
-    const newExpense = { id: nextId, ...expense };
+    const newExpense = { id: generateuuid(), ...expense };
 
     // Update the transactions array with the new expense
     setTransactions((prevTransactions) => [newExpense, ...prevTransactions]);
 
     // Increment the counter for the next ID
-    setNextId((prevId) => prevId + 1);
+
 
     // Subtract the expense amount from the wallet balance
     const updatedWalletBalance = walletBalance - parseFloat(expense.price);

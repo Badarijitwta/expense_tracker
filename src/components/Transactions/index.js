@@ -1,5 +1,5 @@
 import './style.css'
-import { MdDelete, MdEdit } from 'react-icons/md';
+
 import { IoPizzaOutline, IoBusOutline, IoBusinessOutline, IoFootballOutline, IoFilmOutline, IoExtensionPuzzleOutline, IoPencilSharp, IoTrashBinSharp } from 'react-icons/io5';
 
 function Transaction({ transaction, handleEdit, handleDelete }) {
@@ -16,7 +16,7 @@ function Transaction({ transaction, handleEdit, handleDelete }) {
       <li key={transaction.id}>
         <div id='transaction-icon'>
           {/* Display icon based on category */}
-          {categoryIcons[transaction.category.toLowerCase()] || <IoExtensionPuzzleOutline size={20} />} {/* Default icon if category not found */}
+          {categoryIcons[transaction.category.toLowerCase()] || <IoExtensionPuzzleOutline size={35} />} {/* Default icon if category not found */}
         </div>
         <div id='transaction-td-wrapper'>
           <h2>{transaction.title}</h2>
