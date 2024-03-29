@@ -19,3 +19,9 @@
 /* * {
   border: 2px solid yellow
 } */
+
+@media(max-width:568px) {
+  .top-expenses-graph {
+    margin-left: 1.3rem;
+  }
+}

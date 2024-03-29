@@ -73,7 +73,7 @@
   border: 2px solid black;
 } */
 
-@media (min-width:400px) {
+@media (min-width:568px) {
   .expense-modal {
     max-width: 600px;
     display: flex;

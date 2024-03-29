@@ -69,3 +69,25 @@
 /* .below-content-container>* {
   border: 2px solid red;
 } */
+
+@media (max-width:568px) {
+  .top-content-container {
+    width: 100%;
+    max-width: 568px;
+
+  }
+
+
+  .top-content-wrapper {
+    display: grid;
+
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 1rem;
+    padding-left: 14%;
+  }
+
+  .below-content-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
